@@ -1,0 +1,33 @@
+
+.container{
+    max-width: 1200px;
+    padding: 4rem 5rem;
+}
+.flex-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000000aa;
+    background-color: #ff002b;
+    margin-bottom: 1rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     ". . . foto-destaque-verde"
+     ". . . foto-destaque-verde";
+    
+}
+.foto-destaque-verde {
+    background-color: #24cc2d;
+    /*grid-row: span 2;*/
+    grid-area: foto-destaque-verde;
+    height: 400px;
+}
