@@ -298,10 +298,77 @@ blockquote::before, blockquote::after,
     font-weight: 600;
     line-height: 18px;
 }
+                                    /*Beneficios*/
+.beneficios{
+    text-align: center;
+    padding: 0 5%;
+    background-color: #f2f2f2;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beneficios__titulo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e93d50;
+    margin-bottom: 1rem;
+}
+.beneficio__lista{
+    display: grid;
+    gap: 2rem;
+}
+.beneficio-lista__item{
+    padding: 5.5rem 2rem  1rem;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+    background-position: top 20px center;
+    border: 2px solid #4286f4;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+.beneficio-lista__item:hover{
+    border: 2px solid #f76148;
+}
+.beneficio__paravoce{
+    background-image: url(../img/icone-beneficios-tudo-para-voce.svg);
+
+}
+.beneficio--duvidas{
+    background-image: url(../img/icone-beneficios-nenhuma-duvida.svg);
+  
+}
+.beneficio--didatica{
+    background-image: url(../img/icone-beneficios-didatica-cuidadosa.svg);
+ 
+}
+.beneficio--online{
+    background-image: url(../img/icone-beneficios-online.svg);
+}
+.beneficio__titulo{
+    font-weight: 600;
+    margin: 1rem 0;
+}
+                                    /*Youtube*/
+
+.chamada__youtube {
+    display: grid;
+    justify-items: center;
+    background-color: #2e4255;
+    padding-inline: 2rem;
+}
+.chamada__youtube__canal {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: 1.2rem 2rem .9rem;
+    position: relative;
+}
 
 
-
-/*FOOTER STYLE*/
+                                  /*FOOTER STYLE*/
 
 .footer__container {
     display: grid;
@@ -505,6 +572,16 @@ form .form-newsletter__botao {
         background-color: #e93d50;
         border-radius: 8px;
     }
+    .beneficios{
+        padding-bottom: 4rem;
+    }
+    .beneficios__titulo{
+        font-size: 2.3rem;
+        margin:2rem  0;
+    }
+    .beneficio__lista{
+        grid-template-columns: repeat(2, 2fr);
+    }
     .footer__container {
 
         grid-template-columns: repeat(3, 1fr);
@@ -550,7 +627,9 @@ form .form-newsletter__botao {
         background-size: 6rem 6rem;
         background-position: top 3.6rem center;
     }
-    
+    .beneficio__lista{
+        grid-template-columns: repeat(4, 1fr);
+    }
     .footer__container {
         grid-template-columns: repeat(4, 1fr);
     }
