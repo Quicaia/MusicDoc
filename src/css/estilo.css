@@ -435,6 +435,66 @@ blockquote::before, blockquote::after,
     background-size: cover;
     width: 100%;
 }
+                                    /* Aplicativo */
+
+.chamada__aplicativo{
+    color: #fff;
+    text-align: center; 
+    background-color: #f76148;
+    padding: 2rem 7.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+.aplicativo__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+    line-height: 24px;
+    grid-column-end: span 2;
+}
+.aplicativo__texto {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    grid-column-end: span 2;
+}
+.texto__destaque {
+    font-weight: 700;
+}
+.chamada__aplicativo__button--wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aplicativo__btn {
+    color: #e93d50;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    width: 7.5rem;
+    padding: 1rem 0 1rem 1rem;
+    background-size: 1.3rem;
+    background-repeat: no-repeat;
+}
+.app__download--android {
+    background-image: url(../img/icone-android-logo.svg);
+    background-position: left  .3rem center;
+    padding-left: 2rem;
+    background-size: 1.5rem;
+}
+.app__download--ios {
+    background-image: url(../img/icone-apple-logo.svg);
+    background-position: left .5rem top .5rem;
+}
+.aplicativo--icone {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .2rem;
+    vertical-align: middle; 
+}
 
                                   /*FOOTER STYLE*/
 
