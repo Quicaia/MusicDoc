@@ -356,6 +356,8 @@ blockquote::before, blockquote::after,
     justify-items: center;
     background-color: #2e4255;
     padding-inline: 2rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
 }
 .chamada__youtube__canal {
     color: #fff;
@@ -363,7 +365,7 @@ blockquote::before, blockquote::after,
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: 1.2rem 2rem .9rem;
+    padding: 1.2rem 2rem .9rem;
     position: relative;
 }
 .icone--youtube::before {
@@ -371,6 +373,7 @@ blockquote::before, blockquote::after,
     width:3rem;
     height:3rem;
     background-image: url(../img/icone-youtube.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -379,15 +382,16 @@ blockquote::before, blockquote::after,
 }
 .canal__titulo {
     color: #e93d50;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     margin-top: 1.5rem;
-    padding: 2rem 0;
+    margin-bottom: .5rem;
 }
 
 .canal__texto{
-    letter-spacing: .8px;
     font-size: 1rem;
+    letter-spacing: .8px;
+    line-height: 1.5;
     font-weight: 400;
     margin-bottom: 1rem;
 }
@@ -404,7 +408,7 @@ blockquote::before, blockquote::after,
     width: 80%;
 }
 .descricao__titulo {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -412,7 +416,7 @@ blockquote::before, blockquote::after,
 .descricao__titulo::before{
     content: "";
     width: 3rem;
-    height: 3px;
+    height: 3rem;
     background-image: url(../img/play-button.svg);
     background-size: 100%;
     display: block;
@@ -422,6 +426,14 @@ blockquote::before, blockquote::after,
 .chamada__youtube--video1 {
     background-image: url(../img/videos-thumbnail-video1.png);
    
+}
+.chamada__youtube--video2{
+    background-image: url(../img/videos-thumbnail-video2.png);
+}
+.chamada__youtube--video1 , 
+.chamada__youtube--video2 {
+    background-size: cover;
+    width: 100%;
 }
 
                                   /*FOOTER STYLE*/
@@ -638,6 +650,41 @@ form .form-newsletter__botao {
     .beneficio__lista{
         grid-template-columns: repeat(2, 2fr);
     }
+
+    .chamada__youtube {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "chamada chamada"
+                              "video1 video2";
+    }
+    .youtube__informacao{
+        padding: 2rem 17%;
+        box-sizing: border-box;
+        grid-area: chamada;
+    }
+    .icone--youtube::before{
+        width: 5rem;
+        height: 5rem;
+    }
+    .chamada__youtube--video1{
+        grid-area: video1;
+    }
+    .chamada__youtube--video2 {
+        grid-area: video2;
+    }
+    .canal__titulo{
+        font-size: 2rem;
+    }
+    .canal__texto{
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .descricao__texto{
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+
     .footer__container {
 
         grid-template-columns: repeat(3, 1fr);
@@ -686,6 +733,33 @@ form .form-newsletter__botao {
     .beneficio__lista{
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .youtube__informacao{
+        padding: 4rem 20%;
+    }
+
+    .icone--youtube::before{
+        width: 6rem;
+        height: 6rem;
+    }
+    .video__descricao {
+        width: 75%;
+        text-align: left;
+    }
+    .descricao__titulo {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .canal__btn{
+        font-size: 1.1rem;
+    }
+    .descricao__texto {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        line-height: 1.8;
+    }
+
+
     .footer__container {
         grid-template-columns: repeat(4, 1fr);
     }
