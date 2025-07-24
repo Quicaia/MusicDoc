@@ -366,7 +366,63 @@ blockquote::before, blockquote::after,
     position: 1.2rem 2rem .9rem;
     position: relative;
 }
+.icone--youtube::before {
+    content: "";
+    width:3rem;
+    height:3rem;
+    background-image: url(../img/icone-youtube.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.canal__titulo {
+    color: #e93d50;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    padding: 2rem 0;
+}
 
+.canal__texto{
+    letter-spacing: .8px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.canal__btn{
+    color: #fff;
+    background-color: #e93d50;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+.video-descricao{
+    width: 80%;
+}
+.descricao__titulo {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.descricao__titulo::before{
+    content: "";
+    width: 3rem;
+    height: 3px;
+    background-image: url(../img/play-button.svg);
+    background-size: 100%;
+    display: block;
+    margin: 1.2rem auto 1rem;
+}
+
+.chamada__youtube--video1 {
+    background-image: url(../img/videos-thumbnail-video1.png);
+   
+}
 
                                   /*FOOTER STYLE*/
 
